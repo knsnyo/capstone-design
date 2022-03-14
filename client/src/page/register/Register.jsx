@@ -10,7 +10,6 @@ export default function Register() {
           type="text"
           className="registerInput"
           placeholder="Enter your ID"
-          name="id"
         />
         <label>PASSWORD</label>
         <input
