@@ -29,7 +29,7 @@
 .registerButton{
 	margin-top: 20px;
 	cursor: pointer;
-	background-color: lightcoral;
+	background-color: green;
 	border: none;
 	color: white;
 	border-radius: 10px;
@@ -39,4 +39,8 @@
 .registerButton::disabled{
 	cursor: not-allowed;
 	background-color: coral;
+}
+
+.error{
+	color: red;
 }
