@@ -1,4 +1,6 @@
 <?php
+# 회원가입 처리
+
 include("../../db.php");
 
 if(isset($_POST["id"]) && isset($_POST["password"])){

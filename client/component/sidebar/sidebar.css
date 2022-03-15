@@ -1,0 +1,26 @@
+.sidebar{
+	width: 100%;
+	background-color: whitesmoke;
+	position: sticky;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	z-index: 999;
+}
+
+.sidebarList{
+	margin: 10;
+	padding: 0;
+	list-style: none;	
+}
+
+.sidebarListItem{
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+
+.link{
+	text-decoration: none;
+	color: inherit;
+}

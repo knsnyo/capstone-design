@@ -7,7 +7,9 @@
 </head>
 
 <body>
-	<?php require "../../component/navbar/Navbar.php"?>
+  <header>
+    <?php require "../../component/navbar/Navbar.php"?>
+  </header>
   <div class="register">
     <span class="registerTitle">Register</span>
     <form class="registerForm" action="../../../api/router/auth/register.php" method="POST">

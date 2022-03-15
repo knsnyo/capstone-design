@@ -1,0 +1,12 @@
+.mypage{
+	display: flex;
+	margin: 0;
+}
+
+.sidebarDiv{
+	flex: 3;
+}
+
+.mypageDiv{
+	flex: 9;
+}

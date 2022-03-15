@@ -12,7 +12,7 @@ if(isset($_SESSION["mb_id"])){
 <html>
 
 <head>
-  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="./navbar.css">
 </head>
 
 <body>
@@ -66,7 +66,7 @@ if(isset($_SESSION["mb_id"])){
       ?>
       <ul class="navbarList">
         <li class="navbarListItem">
-          <a class="link" href="../../pages/home/Home.php">
+          <a class="link" href="../../pages/mypage/Mypage.php">
             <?php echo "$user" ?>
           </a>
         </li>

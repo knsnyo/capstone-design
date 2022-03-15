@@ -1,4 +1,6 @@
 <?php
+# 로그인 처리
+
 session_start();
 include("../../db.php");
 
