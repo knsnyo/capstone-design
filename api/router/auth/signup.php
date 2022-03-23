@@ -36,7 +36,7 @@ if(isset($_POST["id"]) && isset($_POST["pw"])
 			$save = "INSERT INTO `user`(`id`, `password`, `name`, `email`, `age`, `sex`, `tel`) VALUES ('$id','$password','$name','$email','','$sex','$tel')";
 			$result = mysqli_query($db, $save);
 
-			header("location: http://isc963.dothome.co.kr/front/signup/signup.php");
+			header("location: http://isc963.dothome.co.kr/front/login/login.php");
 			exit();
 		}
 	}

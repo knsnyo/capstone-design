@@ -1,0 +1,105 @@
+/* 전체 */
+.size-1 {
+  font-size: 18px;
+}
+.size-2 {
+  font-size: 24px;
+}
+.size-3 {
+  font-size: 32px;
+}
+
+/* MyPage부분 */
+.my-page {
+  margin-top: 100px;
+}
+
+.my-page .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.my-page .box > h3 {
+  font-size: 32px;
+}
+
+.my-page .page-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.page-menu .info,
+.page-menu .inquiry {
+  cursor: pointer;
+}
+
+.my-page .page-menu-detail {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-menu-detail .info-detail,
+.page-menu-detail .inquiry-detail {
+  width: 50%;
+  border: 1px solid rgb(231, 231, 231);
+  height: 500px;
+}
+
+.page-menu-detail .inquiry-detail {
+  display: none;
+  position: relative;
+}
+
+.page-menu-detail .info-detail .info-info,
+.page-menu-detail .inquiry-detail .inquiry-info {
+  margin-top: 30px;
+}
+
+.page-menu-detail .info-detail .info-info {
+  position: absolute;
+  width: 50%;
+  left: 35%;
+}
+
+.page-menu-detail .info-detail .info-info > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-menu-detail .info-detail .info-info .info-id {
+  width: 60%;
+  height: 40px;
+  border: 1px solid gray;
+  
+}
+
+.page-menu-detail .info-detail .info-info .info-name {
+  width: 60%;
+  height: 40px;
+  border: 1px solid gray;
+}
+
+.page-menu-detail .info-detail .info-info .info-email {
+  width: 60%;
+  height: 40px;
+  border: 1px solid gray;
+}
+
+.page-menu-detail .info-detail .info-info .info-phone {
+  width: 60%;
+  height: 40px;
+  border: 1px solid gray;
+}
+
+.page-menu-detail .info-detail .info-info .info-interval {
+  margin-top: 50px;
+  background-color: rgb(231, 231, 231);
+}

@@ -3,15 +3,14 @@ a {
   color: #000;
   text-decoration: none;
 }
-
 .container {
   position: relative;
 }
 
 /* 헤더 */
 .header {
-  border-bottom: 1px solid rgb(231, 231, 231);;
-  padding: 50px 0;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,10 +96,11 @@ border: 1px solid #000;
 
 /* 푸터 */
 .footer {
-  padding-top: 300px;
+  padding-top: 100px;
 }
 .footer_02 {
-  background-color: #272727;
+  border-top: 1px solid rgb(231, 231, 231);
+  /* background-color: #272727; */
 }
 footer {
   border-top: 1px solid #333;
@@ -137,8 +137,8 @@ footer .menu li a {
  padding: 15px;
  display: block;
 }
-footer .menu li a.green {
-  color: #669900;
+footer .menu li a.blue {
+  color: #0000FF;
 }
 footer .btn-group {
   margin-top: 20px;

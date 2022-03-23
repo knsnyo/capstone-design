@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인</title>
+  <title>디쿠방</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -14,7 +14,7 @@
 <body>
   
 <section class="login-form">
-  <h1><a href="../index.php">DCU직방</a></h1>
+  <h1><a href="../index.php">디쿠방</a></h1>
   <form action="../api/router/auth/login.php" method="post">
     <div class="int-area">
       <input type="text" name="id" id="id" autocomplete="off" required>
