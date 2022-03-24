@@ -14,12 +14,12 @@ include('../../db.php');
     {
         echo "<script> 
         alert('아이디가 입력되지 않음'); 
-        location.replace('../../../login/login.html')</script>";
+        location.replace('../../../front/login/login.php')</script>";
     }
 
     else if(empty($password))
     {
-        echo "<script> alert('패스워드가 입력되지 않음'); location.replace('../../../login/login.html')</script>";
+        echo "<script> alert('패스워드가 입력되지 않음'); location.replace('../../../front/login/login.php')</script>";
     }
 
     else
@@ -39,17 +39,17 @@ include('../../db.php');
             {
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['name'] = $row['name'];
-                echo "<script> alert('로그인 성공'); location.replace('../../../index.html')</script>";  
+                echo "<script> alert('로그인 성공'); location.replace('../../../front/index.php')</script>";  
             }
             else
             {
-                echo "<script> alert('비밀번호를 확인하세요'); location.replace('../../../login/login.html')</script>";
+                echo "<script> alert('비밀번호를 확인하세요'); location.replace('../../../front/login/login.php')</script>";
             }
 
         }
         else
         {
-            echo "<script> alert('아이디를 확인하세요'); location.replace('../../../login/login.html')</script>";
+            echo "<script> alert('아이디를 확인하세요'); location.replace('../../../front/login/login.php')</script>";
         }
 
     }
@@ -58,7 +58,7 @@ include('../../db.php');
 
  else
  {
-    echo "<script> alert('알 수 없는 오류 발생 서버관리자에게 문의 바람'); location.replace('index.html')</script>";
+    echo "<script> alert('알 수 없는 오류 발생 서버관리자에게 문의 바람'); location.replace('../../../front/index.php')</script>";
  }
 
 

@@ -15,7 +15,7 @@
   
 <section class="login-form">
   <h1><a href="../index.php">디쿠방</a></h1>
-  <form action="../api/router/auth/login.php" method="post">
+  <form action="../../api/router/auth/login.php" method="post">
     <div class="int-area">
       <input type="text" name="id" id="id" autocomplete="off" required>
       <label for="id">아이디</label>
