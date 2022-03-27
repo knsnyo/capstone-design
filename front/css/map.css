@@ -1,3 +1,9 @@
+.map_container {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
 .map_kakao {
   width: 80%;
   float: left;
@@ -29,13 +35,55 @@
 }
 
 .map_kakao .kakao_api {
-  width: 100%; float: left; border-right:  1px solid rgb(231, 231, 231);
+  width: 100%;
+  float: left;
+  border-right: 1px solid rgb(231, 231, 231);
 }
 
 .map_kakao .kakao_api .kakao .kakaoMap_size {
-  width: auto; height:90vh;
+  width: auto;
+  height: 90vh;
 }
 
 .building {
-  width: 20%; float: right;
+  width: 20%;
+}
+
+.building .map_side_02 {
+  height: 50px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.building .map_side_02 .map_side_menu_02 {
+  margin-right: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.building .map_side_02 .map_side_menu_02:first-child,
+.building .map_side_02 .map_side_menu_02:last-child {
+  margin: 0 5px 0 5px;
+}
+
+.loop-bilding > ul {
+  padding-left: 0;
+}
+
+.loop-bilding > ul > li {
+  background-color: gray;
+  margin-bottom: 20px;
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  font-size: 100px;
+  padding: 100px 0;
+}
+
+/* 짝수, 홀수 색상 구분하기 위해 */
+.loop-bilding > ul > li:nth-child(2n) {
+  background-color: gray;
 }

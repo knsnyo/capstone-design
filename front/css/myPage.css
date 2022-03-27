@@ -46,23 +46,25 @@
 }
 
 .page-menu-detail .info-detail,
-.page-menu-detail .inquiry-detail {
+.page-menu-detail .inquiry-detail,
+.page-menu-detail .correction-detail {
   width: 50%;
   border: 1px solid rgb(231, 231, 231);
-  height: 500px;
+  height: 600px;
 }
 
-.page-menu-detail .inquiry-detail {
+.page-menu-detail .inquiry-detail,
+.page-menu-detail .correction-detail {
   display: none;
-  position: relative;
 }
 
 .page-menu-detail .info-detail .info-info,
+.page-menu-detail .inquiry-detail .info-correction,
 .page-menu-detail .inquiry-detail .inquiry-info {
   margin-top: 30px;
 }
 
-.page-menu-detail .info-detail .info-info {
+.info-info {
   position: absolute;
   width: 50%;
   left: 35%;
@@ -74,32 +76,60 @@
   align-items: center;
 }
 
-.page-menu-detail .info-detail .info-info .info-id {
+.info-id {
   width: 60%;
   height: 40px;
-  border: 1px solid gray;
-  
+  /* border: 1px solid gray; */
 }
 
-.page-menu-detail .info-detail .info-info .info-name {
+.info-name {
   width: 60%;
   height: 40px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
-.page-menu-detail .info-detail .info-info .info-email {
+.info-email {
   width: 60%;
   height: 40px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
-.page-menu-detail .info-detail .info-info .info-phone {
+.info-phone {
   width: 60%;
   height: 40px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
-.page-menu-detail .info-detail .info-info .info-interval {
+.info-interval {
   margin-top: 50px;
   background-color: rgb(231, 231, 231);
+  display: flex;
+}
+
+.page-menu-detail .info-detail .info-info .info-correction {
+  position: absolute;
+  right: 300px;
+}
+
+.building-name {
+  display: block;
+  width: 60%;
+  height: 40px;
+  border: 1px solid black;
+}
+.building-price {
+  display: block;
+  width: 20%;
+  height: 40px;
+  border: 1px solid black;
+}
+.building-date {
+  display: block;
+  width: 20%;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.button-delete {
+  display: inline;
 }

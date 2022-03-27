@@ -39,6 +39,8 @@ include('../../db.php');
             {
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['name'] = $row['name'];
+                $_SESSION['email'] = $row['email'];
+                $_SESSION['tel'] = $row['tel'];
                 echo "<script> alert('로그인 성공'); location.replace('../../../front/index.php')</script>";  
             }
             else
