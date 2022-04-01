@@ -44,7 +44,7 @@
         <div class="kakao_api">
           <div class="kakao">
             <div class="kakaoMap_size" id="map"></div>
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=605db5303d35869f7dea1bc7ebc32ea0"></script>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=????"></script>
             <script src="../js/kakao.js"></script>
           </div>
         </div>
