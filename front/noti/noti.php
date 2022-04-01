@@ -10,9 +10,9 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>디쿠방</title>
   <link rel="stylesheet" rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="../../front/css/btn.css?ggg">
-  <link rel="stylesheet" href="../../front/css/main.css?aa">
-  <link rel="stylesheet" href="../../front/css/board.css?aa">
+  <link rel="stylesheet" href="../../front/css/btn.css?aaa">
+  <link rel="stylesheet" href="../../front/css/main.css?aaa">
+  <link rel="stylesheet" href="../../front/css/board.css?aaa">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -23,11 +23,10 @@ session_start();
   <?php include "../../front/header/header.php" ?>
   <!--헤더 끝-->
 
-
   <section>
 
     <div class="title">
-      <h2>자유게시판</h2>
+      <h2>공지사항</h2>
     </div>
 
     <div class="board_list_wrap">
@@ -43,7 +42,7 @@ session_start();
         </thead>
         <tbody>
 				<?php
-				
+        include("../../api/router/bbs/bbsList.php");
 				?>
 				</tobdy>
       </table>
@@ -55,7 +54,7 @@ session_start();
         <a href="#" class="bt">마지막 페이지</a>
       </div>
       <div class="registration">
-        <a href="../../front/write/write.php" class="btn btn--blue">글쓰기</a>
+        <a href="javascript:void(0);" class="btn btn--blue">글쓰기</a>
       </div>
     </div>
   </section>

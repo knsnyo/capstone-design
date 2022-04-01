@@ -9,13 +9,13 @@
   <link rel="stylesheet" rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="../css/btn.css?aa">
   <link rel="stylesheet" href="../css/main.css?aa">
-  <link rel="stylesheet" href="../css/map.css?aa">
+  <link rel="stylesheet" href="../css/map.css?yy">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
   <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script defer src="../../front/js/map.js?aa"></script>
+  <script defer src="../../front/js/map.js?hhh"></script>
 </head>
 
 <body>
@@ -60,9 +60,52 @@
 
         <div class="loop-bilding" style="overflow-y:auto; overflow-x:hidden; width:100%; height:810px;">
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+						<?php include("../../api/router/house/houseList.php");?>
+            <li>
+              <ul>
+                <li>이름: </li>
+                <li>가격: </li>
+                <li>날짜: </li>
+                <li>원/투룸: </li>
+                <li>월/전세: </li>
+              </ul>
+            </li>
+            <!--li>
+              <ul>
+                <li>이름: </li>
+                <li>가격: </li>
+                <li>날짜: </li>
+                <li>원/투룸: </li>
+                <li>월/전세: </li>
+              </ul>
+            </!--li>
+            <li>
+              <ul>
+                <li>이름: </li>
+                <li>가격: </li>
+                <li>날짜: </li>
+                <li>원/투룸: </li>
+                <li>월/전세: </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>이름: </li>
+                <li>가격: </li>
+                <li>날짜: </li>
+                <li>원/투룸: </li>
+                <li>월/전세: </li>
+              </ul>
+            </li>
+            <li-->
+              <ul>
+                <li>이름: </li>
+                <li>가격: </li>
+                <li>날짜: </li>
+                <li>원/투룸: </li>
+                <li>월/전세: </li>
+              </ul>
+            </li-->
           </ul>
         </div>
 

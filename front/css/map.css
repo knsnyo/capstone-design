@@ -42,7 +42,7 @@
 
 .map_kakao .kakao_api .kakao .kakaoMap_size {
   width: auto;
-  height: 90vh;
+  height: 102vh;
 }
 
 .building {
@@ -69,21 +69,44 @@
   margin: 0 5px 0 5px;
 }
 
-.loop-bilding > ul {
+.loop-bilding>ul {
   padding-left: 0;
 }
 
-.loop-bilding > ul > li {
+.loop-bilding>ul>li {
   background-color: gray;
   margin-bottom: 20px;
   list-style: none;
   text-align: center;
   color: #fff;
-  font-size: 100px;
-  padding: 100px 0;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.loop-bilding>ul>li>ul {
+  font-size: 14px;
+}
+
+.loop-bilding>ul>li>ul>li {
+  font-size: 20px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.loop-bilding>ul>li>ul>li:first-child {
+  margin-top: 0;
 }
 
 /* 짝수, 홀수 색상 구분하기 위해 */
-.loop-bilding > ul > li:nth-child(2n) {
+.loop-bilding>ul>li:nth-child(2n) {
   background-color: gray;
+}
+
+#loop {
+  display: block;
+  font-size: 18px;
+}
+
+.loop > div {
+  margin: 20px 0;
 }
