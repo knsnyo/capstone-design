@@ -7,7 +7,7 @@ for(;$row = mysqli_fetch_array($order, MYSQLI_ASSOC);) {
 	<tr>
 		<td><?php echo $row['bbsId'] ?></td>
 		<td class="tit">
-			<a href="http://isc963.dothome.co.kr/front/view/view.php?idx=<?php echo $row['bbsId']?>">
+			<a href="http://isc963.dothome.co.kr/front/view/view.php?id=<?php echo $row['bbsId']?>">
 			<?php echo $row['title'] ?>
 		</a>
 		</td>
