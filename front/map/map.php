@@ -61,15 +61,6 @@
         <div class="loop-bilding" style="overflow-y:auto; overflow-x:hidden; width:100%; height:810px;">
           <ul>
 						<?php include("../../api/router/house/houseList.php");?>
-            <li>
-              <ul>
-                <li>이름: </li>
-                <li>가격: </li>
-                <li>날짜: </li>
-                <li>원/투룸: </li>
-                <li>월/전세: </li>
-              </ul>
-            </li>
             <!--li>
               <ul>
                 <li>이름: </li>
@@ -98,14 +89,6 @@
               </ul>
             </li>
             <li-->
-              <ul>
-                <li>이름: </li>
-                <li>가격: </li>
-                <li>날짜: </li>
-                <li>원/투룸: </li>
-                <li>월/전세: </li>
-              </ul>
-            </li-->
           </ul>
         </div>
 

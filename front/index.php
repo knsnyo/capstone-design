@@ -32,7 +32,7 @@ if (isset($_SESSION['id'])) {
 
   <link rel="stylesheet" rel="icon" href="../favicon.ico">
   <link rel="stylesheet" href="../front/css/main.css?hhh">
-  <link rel="stylesheet" href="../front/css/btn.css?hhh">
+  <link rel="stylesheet" href="../front/css/btn.css?ttttt">
   <link rel="stylesheet" href="../front/css/main_kakaoApi.css?hhh">
   <link rel="stylesheet" href="../front/css/main_animation.css?hhh">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -91,7 +91,7 @@ if (isset($_SESSION['id'])) {
 					</div>
 				<?php } else { ?>
 					<div class="menu-text">
-						<span><a href="../../front/myPage/myPage.php">
+						<span><a href="../../front/myPage/myPage.php" style="margin-right: 25px;">
 							<?php echo "$name" ?>님</a>
 						</span>
 					</div>
