@@ -30,8 +30,10 @@
         <!-- kakao Map 매물 검색 메뉴 -->
         <div class="map_search">
           <div class="search">
-            <input type="text" placeholder="검색어 입력">
-            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+						<form method="get" action="../../api//router/house/searchRoomList.php">
+							<input name="item" type="text" placeholder="검색어 입력"/>
+							<button type="submit"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" style="cursor: pointer"></a>
+						</form>
           </div>
         </div>
 
@@ -40,7 +42,7 @@
           <div class="kakao">
             <div class="kakaoMap_size" id="map"></div>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=605db5303d35869f7dea1bc7ebc32ea0"></script>
-            <script src="../../front/js/kakao.js"></script>
+            <script src="../../front/js/kakao2.js"></script>
           </div>
         </div>
       </div>
@@ -66,14 +68,14 @@
         </div>
 
         <div class="loop-bilding one-room-detail" style="overflow-y:auto; overflow-x:hidden; width:100%; height:810px;">
-          <ul>
-            원룸
+				  <ul>
+            <?php include "../../api/router/house/oneRoomList.php" ?>
           </ul>
         </div>
 
         <div class="loop-bilding two-room-detail" style="overflow-y:auto; overflow-x:hidden; width:100%; height:810px;">
           <ul>
-            투룸
+            <?php include "../../api/router/house/twoRoomList.php" ?>
           </ul>
         </div>
 
