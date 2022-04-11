@@ -1,15 +1,15 @@
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-mapOption = {
-        center: new kakao.maps.LatLng(35.8396648, 128.5737281), // 지도의 중심좌표
-        level: 5 // 지도의 확대 레벨
-    };
-
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
 // 마커를 생성합니다
-fetch("http://isc963.dothome.co.kr/api/router/house/markingMap.php")
+fetch("http://isc963.dothome.co.kr/api/router/house/location_point copy.php" + window.location.search)
 .then((res) => res.json())
 .then((datas) => {
+	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		mapOption = {
+      center: new kakao.maps.LatLng(datas[0].x, datas[0].y), // 지도의 중심좌표
+      level: 5 // 지도의 확대 레벨
+    };
+
+	var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
 	datas.map((data) => {
 		var marker = new kakao.maps.Marker({
 			position: new kakao.maps.LatLng(data.x, data.y),

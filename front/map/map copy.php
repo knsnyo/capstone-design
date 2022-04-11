@@ -17,6 +17,9 @@
   <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script defer src="../../front/js/map.js?fdsfdsfsdf"></script>
   <!-- <script defer src="../../front/js/map.js?hhh"></script> -->
+	<script>
+		alert(window.location.search)
+	</script>
 </head>
 
 <body>

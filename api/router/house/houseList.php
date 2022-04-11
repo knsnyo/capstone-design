@@ -9,6 +9,7 @@ if(isset($_GET['item'])){
 	where `COL 1` like '%$item%' or
 	`COL 2` like '%$item%' or
 	`COL 3` like '%$item%' or
+	`COL 4` like '%$item%' or
 	`COL 5` like '%$item%' or
 	`COL 6` like '%$item%' or
 	`COL 8` like '%$item%' or
