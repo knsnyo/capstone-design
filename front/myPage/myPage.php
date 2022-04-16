@@ -118,14 +118,16 @@ if (isset($_SESSION['id'])) {
         <!-- 정보 수정 -->
 
         <!--즐겨찾기-->
+
         <div class="inquiry-detail">
+          
           <div class="inquiry-info">
 
             <div class="board_list_wrap">
               <table class="board_list">
                 <thead>
                   <tr>
-                    <th>날짜</th>
+                    <th><button>Check All</button></th>
                     <th>이름</th>
                     <th>가격</th>
                     <th>원/투룸</th>
@@ -133,8 +135,8 @@ if (isset($_SESSION['id'])) {
                   </tr>
                 </thead>
                 <tbody>
-									<?php include("../../api/router/user/zzimList.php")?>
-                </tobdy>
+                  <?php include("../../api/router/user/zzimList.php") ?>
+                  </tobdy>
               </table>
               <div class="paging">
                 <a href="#" class="bt">첫 페이지</a>
@@ -143,7 +145,9 @@ if (isset($_SESSION['id'])) {
                 <a href="#" class="bt">다음 페이지</a>
                 <a href="#" class="bt">마지막 페이지</a>
               </div>
-
+              <div style="margin-left:410px; margin-right:430px; margin-top: 5px;">
+               <a href="../../front/chart/chart.php" class="btn">그래프 보기</a>
+              </div>
               <!-- <div class="inquiry-box">
               <ul class="inquiry-size">
                 <li><span class="building-size-1">이름</span></li>
