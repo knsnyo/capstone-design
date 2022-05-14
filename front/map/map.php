@@ -9,8 +9,9 @@
   <link rel="stylesheet" rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="../../front/css/btn.css?gg">
   <link rel="stylesheet" href="../../front/css/main.css?aa">
-  <link rel="stylesheet" href="../../front/css/map.css?fdffdfdfdf">
+  <link rel="stylesheet" href="../../front/css/map.css?fdfdf">
   <link rel="stylesheet" href="../../front/css/switch.css?fdsfsdf">
+  <link rel="stylesheet" href="../../front/css/menuBar.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -35,17 +36,37 @@
           <div class="search">
             <form method="get" action="../../api/router/house/searchRoomList.php">
               <input name="item" type="text" placeholder="검색어 입력" />
-              <button type="submit"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" style="cursor: pointer"></a>
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" style="cursor: pointer"></a>
             </form>
           </div>
+          <span class="setting">
+            <div>
+              <ul class="menuBar">
+                <li>
+                  <a href="#">방종류</a>
+                  <ul class="submenu">
+                    <li><a href="#">원룸</a></li>
+                    <li><a href="#">투룸</a></li>
+                    <li><a href="#">전세</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">거래유형</a>
+                  <ul class="submenu">
+                    <li><a href="#">월세</a></li>
+                    <li><a href="#">전세</a></li>
+                    <li><a href="#">반전세</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </span>
         </div>
 
         <!-- kakao Map API -->
         <div class="kakao_api">
           <div class="kakao">
             <div class="kakaoMap_size" id="map"></div>
-
-            
           </div>
         </div>
       </div>
@@ -66,14 +87,19 @@
 
         <div class="loop-bilding all-room-detail" style="overflow-y:auto; overflow-x:hidden; width:100%; height:810px;">
           <ul>
-    
-          <?php include "../../api/router/house/houseList.php" ?>
+
+            <?php include "../../api/router/house/houseList.php" ?>
             <!-- <li>
               <ul>
-                <li>이름: <?php echo $row["COL 5"] ?> <?php echo $row["COL 11"] ?></li>
-                <li>가격: <?php echo $row["COL 9"] ?></li>
-                <li>원/투룸: <?php echo $row["COL 4"] ?></li>
-                <li>월/전세: <?php echo $row["COL 8"] ?></li>
+                <li>이름: <?php //echo $row["COL 5"] 
+                        ?> <?php //echo $row["COL 11"] 
+                            ?></li>
+                <li>가격: <?php //echo $row["COL 9"] 
+                        ?></li>
+                <li>원/투룸: <?php //echo $row["COL 4"] 
+                          ?></li>
+                <li>월/전세: <?php //echo $row["COL 8"] 
+                          ?></li>
                 <li>
                   <form action="" method="POST">
                     <div>
