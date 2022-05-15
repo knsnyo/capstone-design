@@ -87,7 +87,7 @@ if (isset($_SESSION['id'])) {
                 <a href="#" class="bt">다음 페이지</a>
                 <a href="#" class="bt">마지막 페이지</a>
               </div>
-              <div style="margin-left:410px; margin-right:430px; margin-top: 5px;">
+              <div style="margin-left:44%; margin-right:44%; margin-top: 5px;">
                <a href="../../front/chart/chart.php" class="btn">그래프 보기</a>
               </div>
               <!-- <div class="inquiry-box">

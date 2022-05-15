@@ -53,9 +53,6 @@ if (isset($_SESSION['id'])) {
         <div class="size-1 info">
           <a href="javascript:info_open();" class="page-menu-color">내 정보</a>
         </div>
-        <div class="size-1 correction">
-          <a href="javascript:correction_open();" class="page-menu-color">정보 수정</a>
-        </div>
         <div class="size-1 inquiry">
           <a href="zzim.php" class="page-menu-color">즐겨찾기</a>
         </div>
@@ -81,6 +78,9 @@ if (isset($_SESSION['id'])) {
                 이&nbsp;&nbsp;&nbsp;메&nbsp;&nbsp;&nbsp;일&#58;&nbsp;&nbsp; <?php echo "$email" ?>
               </div>
             </div>
+          </div>
+          <div style="display:inline; float:right; margin-top:120px; margin-right:10px;">
+            <a href="javascript:correction_open();" class="btn">내정보 수정</a>
           </div>
         </div>
         <!-- 내 정보 -->

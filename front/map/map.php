@@ -47,7 +47,7 @@
                   <ul class="submenu">
                     <li><a href="#">원룸</a></li>
                     <li><a href="#">투룸</a></li>
-                    <li><a href="#">전세</a></li>
+                    <li><a href="#">APT</a></li>
                   </ul>
                 </li>
                 <li>
