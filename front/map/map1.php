@@ -38,7 +38,7 @@
 					<div class="kakao">
 						<div class="kakaoMap_size" id="map">
 							<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=605db5303d35869f7dea1bc7ebc32ea0&libraries=clusterer"></script>
-							<script src="../../front/js/kakao2.js?after4"></script>
+							<script src="../../front/js/kakao3.js"></script>
 						</div>
 					</div>
 				</div>

@@ -16,23 +16,42 @@ fetch("http://isc963.dothome.co.kr/api/router/house/location_point copy.php" + w
 .then((datas) => {
     var i =0;
 
-     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+     const mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 		mapOption = {
       center: new kakao.maps.LatLng(datas[0].x, datas[0].y), // 지도의 중심좌표
       level: 5 // 지도의 확대 레벨
     };
 
-    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+    const map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
     
 	datas.map((data) => {
-        var markers =[];
-		var marker = new kakao.maps.Marker({
+        const markers =[];
+		const marker = new kakao.maps.Marker({
             map: map,
 			position: new kakao.maps.LatLng(data.x, data.y),
             title: data.id
 
 		})
+
+        const infowindow = new kakao.maps.InfoWindow({
+            content:'<div>'+data.id+'</div>' // 인포윈도우에 표시할 내용
+        });
+        kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+        kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
         markers.push(marker);
+
+        function makeOverListener(map, marker, infowindow) {
+            return function() { 
+                infowindow.open(map, marker);
+            };
+        }
+        
+        // 인포윈도우를 닫는 클로저를 만드는 함수입니다 
+        function makeOutListener(infowindow) {
+            return function() {
+                infowindow.close();
+            };
+        }
 
         kakao.maps.event.addListener(marker, 'click', function() {  
             marker.setClickable(true);   

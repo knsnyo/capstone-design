@@ -18,8 +18,7 @@
   <script defer src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
   <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script defer src="../../front/js/map.js?fdsfdsfsdf"></script>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=605db5303d35869f7dea1bc7ebc32ea0"></script>
-  <script src="../../front/js/kakao2 copy.js"></script>
+  
   <!-- <script defer src="../../front/js/map.js?hhh"></script> -->
 </head>
 
@@ -45,17 +44,17 @@
                 <li>
                   <a href="#">방종류</a>
                   <ul class="submenu">
-                    <li><a href="#">원룸</a></li>
-                    <li><a href="#">투룸</a></li>
-                    <li><a href="#">APT</a></li>
+                    <li><label><input type="checkbox" name="" value="" checked>원룸</label></li>
+                    <li><label><input type="checkbox" name="" value="" checked>투룸</label></li>
+                    <li><label><input type="checkbox" name="" value="" checked>APT</label></li>
                   </ul>
                 </li>
                 <li>
                   <a href="#">거래유형</a>
                   <ul class="submenu">
-                    <li><a href="#">월세</a></li>
-                    <li><a href="#">전세</a></li>
-                    <li><a href="#">반전세</a></li>
+                    <li><label><input type="checkbox" name="" value="" checked>월세</label></li>
+                    <li><label><input type="checkbox" name="" value="" checked>전세</label></li>
+                    <li><label><input type="checkbox" name="" value="" checked>반전세</label></li>
                   </ul>
                 </li>
               </ul>
@@ -67,6 +66,10 @@
         <div class="kakao_api">
           <div class="kakao">
             <div class="kakaoMap_size" id="map"></div>
+
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=605db5303d35869f7dea1bc7ebc32ea0&libraries=clusterer"></script>
+			<script src="../../front/js/kakao3.js"></script>
+
           </div>
         </div>
       </div>
@@ -103,7 +106,7 @@
                 <li>
                   <form action="" method="POST">
                     <div>
-                      <input type="checkbox" id="switch">
+                      <input type="checkbox" name="" value="" checked id="switch">
                       <label for="switch" class="switch_label">
                         <span class="onf_btn"></span>
                       </label>
