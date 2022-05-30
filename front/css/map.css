@@ -92,6 +92,15 @@ img {
   align-items: center;
 }
 
+.map_side_sub_02 {
+  height: 50px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .building .map_side_02 .map_side_menu_02 {
   margin-right: 5px;
   font-size: 15px;
@@ -143,4 +152,12 @@ img {
 
 .loop > div {
   margin: 20px 0;
+}
+
+.review-detail {
+  display: block;
+}
+
+.write-detail {
+  display: none;
 }
